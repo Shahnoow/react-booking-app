@@ -1,21 +1,19 @@
-import Header from "../../components/header/Header";
-import Nabar from "../../components/nabar/Nabar";
+import Featured from "../../components/featured/Featured.jsx";
+import Header from "../../components/header/Header.jsx";
+import Nabar from "../../components/nabar/Nabar.jsx";
 import "./home.css";
 
-const home = () => {
+const Home = () => {
   return (
     <div>
       <Nabar />
       <Header />
+      <div className="homeContainer">
+        <Featured />
+        <Featured />
+      </div>
     </div>
   );
 };
 
-export default home;
-// export default function home() {
-//   return (
-//     <div>
-//       <h1>Headings</h1>
-//     </div>
-//   );
-// }
+export default Home;

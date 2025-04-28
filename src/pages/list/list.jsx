@@ -1,15 +1,14 @@
 import React from "react";
+import Navbar from "../../components/nabar/Nabar";
+import Header from "../../components/header/Header";
 
 const list = () => {
-  return <div>List</div>;
+  return (
+    <div>
+      <Navbar />
+      <Header type="list" />
+    </div>
+  );
 };
 
 export default list;
-
-// export default fListunction list() {
-//   return (
-//     <div>
-//       <h1>Headings</h1>
-//     </div>
-//   );
-// }
