@@ -19,7 +19,7 @@ const FeaturedProperties = () => {
       </div>
       <div className="fpItem">
         <img
-          src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/215955381.jpg?k=ff739d1d9e0c8e233f78ee3ced82743ef0355e925df8db7135d83b55a00ca07a&o=&hp=1"
+          src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/487105579.jpg?k=3f8472517b685dbcb8e025e3d282cc1036ba0d1bc3ce8aada5e43a0a64b4ae6d&o=&hp=1"
           alt=""
           className="fpImg"
         />
@@ -33,7 +33,7 @@ const FeaturedProperties = () => {
       </div>
       <div className="fpItem">
         <img
-          src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/232902339.jpg?k=3947def526b8af0429568b44f9716e79667d640842c48de5e66fd2a8b776accd&o=&hp=1"
+          src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/295332551.jpg?k=6db76f96d48f41c5f02a0eff35666e21c24714c178befe21e47a792fc79e2505&o="
           alt=""
           className="fpImg"
         />
@@ -47,7 +47,7 @@ const FeaturedProperties = () => {
       </div>
       <div className="fpItem">
         <img
-          src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/215955381.jpg?k=ff739d1d9e0c8e233f78ee3ced82743ef0355e925df8db7135d83b55a00ca07a&o=&hp=1"
+          src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/627169577.jpg?k=52ce44f367a04d505e8e90a629fcbe2b8d15b5ea068bbabcd89807f7d15d245e&o=&hp=1"
           alt=""
           className="fpImg"
         />
