@@ -59,7 +59,7 @@ const Header = ({ type }) => {
           </div>
           <div className="headerListItem">
             <FontAwesomeIcon icon={faPlane} />
-            <span>Fights</span>ِ
+            <span>Fight</span>
           </div>
           <div className="headerListItem">
             <FontAwesomeIcon icon={faCar} />
@@ -110,6 +110,7 @@ const Header = ({ type }) => {
                     moveRangeOnFirstSelection={false}
                     ranges={date}
                     className="date"
+                    minDate={new Date()}
                   />
                 )}
               </div>
