@@ -4,8 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import Hotel from "./pages/hotel/Hotel.jsx";
 
 import Home from "./pages/home/Home_temp";
-import List from "./pages/list/List";
-import Hotel from "./pages/hotel/Hotel";
+import List from "./pages/list/List_temp";
+import Hotel from "./pages/hotel/Hotel_temp";
 
 export default function App() {
   return (
