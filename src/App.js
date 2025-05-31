@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import List from "./pages/list/List.jsx";
 // import Hotel from "./pages/hotel/Hotel.jsx";
 
-import Home from "./pages/home/Home.jsx";
+import Home from "./pages/home/Home_temp.jsx";
 import List from "./pages/list/List.jsx";
 import Hotel from "./pages/hotel/Hotel.jsx";
 
