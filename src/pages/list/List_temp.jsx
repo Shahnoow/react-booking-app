@@ -9,11 +9,12 @@ import SearchItem from "../../components/searchitems/SearchItem";
 
 const List = () => {
   const location = useLocation();
-  const [destination, setDestination] = useState(location.state.destination);
+  const [destination] = useState(location.state.destination);
   const [date, setDate] = useState(location.state.date);
   const [opendate, setOpenDate] = useState(false);
-  const [options, setOptions] = useState(location.state.options);
-
+  const [options] = useState(location.state.options);
+  /*setOptions*/
+  /*setDestination*/
   return (
     <div>
       <Navbar />
