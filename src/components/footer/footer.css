@@ -1,7 +1,9 @@
 .footer {
   width: 100%;
-  width: 1024px;
+  max-width: 1024px; /* changed fixed 1024px to max-width for responsiveness */
   font-size: 12px;
+  margin: 0 auto; /* center on wider screens */
+  padding: 0 15px; /* add some horizontal padding on mobile */
 }
 
 .fLists {
@@ -9,15 +11,30 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
+  gap: 20px;
 }
 
 .fList {
   list-style: none;
   padding: 0;
+  flex: 1; /* make lists flexible */
 }
 
 .fListItem {
   margin-bottom: 10px;
   color: #003580;
   cursor: pointer;
+}
+
+/* 🔽 Responsive styles for screens ≤ 768px */
+@media (max-width: 768px) {
+  .fLists {
+    flex-direction: column; /* stack footer lists vertically */
+    margin-bottom: 30px;
+    gap: 15px;
+  }
+
+  .fList {
+    width: 100%;
+  }
 }

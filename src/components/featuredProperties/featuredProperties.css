@@ -4,6 +4,8 @@
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 .fpItem {
@@ -43,4 +45,38 @@
 
 .fpRating > span {
   font-size: 14px;
+}
+
+/* 🔽 Responsive styles for screens ≤ 768px */
+@media (max-width: 768px) {
+  .fp {
+    flex-direction: column; /* stack vertically */
+    gap: 15px;
+  }
+
+  .fpItem {
+    width: 100%;
+  }
+
+  .fpImg {
+    height: 200px; /* smaller image on mobile */
+  }
+
+  .fpName {
+    font-size: 18px;
+  }
+
+  .fpCity,
+  .fpPrice {
+    font-size: 14px;
+  }
+
+  .fpRating > button {
+    padding: 5px 8px;
+    margin-right: 8px;
+  }
+
+  .fpRating > span {
+    font-size: 13px;
+  }
 }

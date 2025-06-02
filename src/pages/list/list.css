@@ -43,6 +43,7 @@
   border: none;
   padding: 5px;
 }
+
 .lsItem > span {
   height: 30px;
   padding: 5px;
@@ -80,4 +81,22 @@
 
 .listResult {
   flex: 3;
+}
+
+/* 🔽 Responsive styles for screens ≤ 768px */
+@media (max-width: 768px) {
+  .listWrapper {
+    flex-direction: column;
+  }
+
+  .listSearch {
+    position: relative; /* remove sticky on mobile */
+    top: auto;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .listResult {
+    width: 100%;
+  }
 }

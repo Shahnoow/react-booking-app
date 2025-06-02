@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box; /* Added for better box sizing */
 }
 
 .navbar {
@@ -8,6 +9,7 @@
   background-color: #807e00;
   display: flex;
   justify-content: center;
+  align-items: center; /* vertically center content */
 }
 
 .navContainer {
@@ -17,10 +19,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 10px; /* some horizontal padding */
 }
 
 .logo {
-  font: 500px;
+  font-weight: 500; /* fixed font property */
+  font-size: 24px; /* added font size */
+  cursor: default;
 }
 
 .navButton {
@@ -29,4 +34,11 @@
   padding: 5px 10px;
   cursor: pointer;
   color: #807e00;
+  background-color: white; /* added background to make button visible */
+  border-radius: 3px; /* slight rounding */
+  transition: background-color 0.3s ease;
+}
+
+.navButton:hover {
+  background-color: #febb02; /* subtle hover effect */
 }

@@ -4,6 +4,8 @@
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 .pListItem {
@@ -27,4 +29,28 @@
 .pListTitles > h2 {
   font-size: 14px;
   font-weight: 300;
+}
+
+/* 🔽 Responsive styles for screens ≤ 768px */
+@media (max-width: 768px) {
+  .pList {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .pListItem {
+    width: 100%;
+  }
+
+  .pListImg {
+    height: 180px; /* slightly taller for mobile */
+  }
+
+  .pListTitles > h1 {
+    font-size: 16px;
+  }
+
+  .pListTitles > h2 {
+    font-size: 13px;
+  }
 }

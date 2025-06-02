@@ -93,12 +93,15 @@
   font-size: 18px;
   color: #555;
 }
+
 .hotelDetailsPrice > span {
   font-size: 14px;
 }
+
 .hotelDetailsPrice > h2 {
   font-weight: 300;
 }
+
 .hotelDetailsPrice > button {
   border: none;
   padding: 10px 20px;
@@ -148,4 +151,63 @@
   font-size: 50px;
   color: lightgray;
   cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hotelWrapper {
+    padding: 10px;
+  }
+
+  .bookNow {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .hotelImages {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hotelImgWrapper {
+    width: 100%;
+  }
+
+  .hotelDetails {
+    flex-direction: column;
+  }
+
+  .hotelDetailsPrice {
+    flex: unset;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .sliderImg {
+    width: 95%;
+    height: 50vh;
+  }
+}
+
+@media (max-width: 400px) {
+  .hotelTitle {
+    font-size: 18px;
+  }
+
+  .hotelAddress {
+    font-size: 10px;
+  }
+
+  .hotelDesc {
+    font-size: 12px;
+  }
+
+  .bookNow {
+    padding: 8px;
+    font-size: 14px;
+  }
 }

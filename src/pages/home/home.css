@@ -10,3 +10,17 @@
   width: 1024px;
   font-size: 20px;
 }
+
+/* 🔽 Responsive styles for screens ≤ 768px */
+@media (max-width: 768px) {
+  .homeTitle {
+    width: 100%;
+    padding: 0 15px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .homeContainer {
+    gap: 20px;
+  }
+}

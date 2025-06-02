@@ -11,6 +11,7 @@
   max-width: 1024px;
   margin: 20px 0px 100px 0px;
 }
+
 .headerContainer.listMode {
   margin: 20px 0px 0px 0px;
 }
@@ -19,6 +20,7 @@
   display: flex;
   gap: 40px;
   margin-bottom: 50px;
+  flex-wrap: wrap; /* allow wrap on small screens */
 }
 
 .headerListItem {
@@ -44,15 +46,20 @@
   border: none;
   padding: 10px;
   cursor: pointer;
+  width: 100%;
+  max-width: 200px;
 }
+
 .headerSearch {
-  height: 30px;
+  height: auto;
   background-color: white;
   border: 3px solid #febb02;
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   align-items: center;
   justify-content: space-around;
-  padding: 10px 0px;
+  padding: 10px;
   border-radius: 5px;
   position: absolute;
   bottom: -25px;
@@ -68,11 +75,13 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  flex: 1 1 150px; /* allows responsive resizing */
 }
 
 .headerSearchInput {
   border: none;
   outline: none;
+  width: 100%;
 }
 
 .headerSearchText {
@@ -123,4 +132,43 @@
 
 .optioncounterbutton:disabled {
   cursor: not-allowed;
+}
+
+/* 🔽 Responsive styles for screens ≤ 768px */
+@media (max-width: 768px) {
+  .headerList {
+    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .headerContainer {
+    margin-bottom: 40%;
+    padding-left: 3%;
+  }
+
+  .headerSearch {
+    align-items: center;
+    gap: 15px;
+    padding: 18px;
+    bottom: -10%;
+    width: 95%;
+  }
+
+  .headerSearchItem {
+    justify-content: space-between;
+    flex-direction: row;
+    width: 50%;
+  }
+
+  .headerBtn {
+    align-self: center;
+    width: 100%;
+    padding-bottom: 5%;
+  }
+
+  .headerSearchInput {
+    width: 100%;
+  }
 }
