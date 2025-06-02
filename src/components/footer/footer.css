@@ -29,9 +29,10 @@
 /* 🔽 Responsive styles for screens ≤ 768px */
 @media (max-width: 768px) {
   .fLists {
-    flex-direction: column; /* stack footer lists vertically */
-    margin-bottom: 30px;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    gap: 25px;
+    margin-bottom: 20px;
   }
 
   .fList {

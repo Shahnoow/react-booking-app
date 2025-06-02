@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Added for better box sizing */
+  box-sizing: border-box;
 }
 
 .navbar {
@@ -9,7 +9,7 @@
   background-color: #807e00;
   display: flex;
   justify-content: center;
-  align-items: center; /* vertically center content */
+  align-items: center;
 }
 
 .navContainer {
@@ -19,12 +19,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 10px; /* some horizontal padding */
+  padding: 0 10px;
 }
 
 .logo {
-  font-weight: 500; /* fixed font property */
-  font-size: 24px; /* added font size */
+  font-weight: 500;
+  font-size: 24px;
   cursor: default;
 }
 
@@ -34,11 +34,34 @@
   padding: 5px 10px;
   cursor: pointer;
   color: #807e00;
-  background-color: white; /* added background to make button visible */
-  border-radius: 3px; /* slight rounding */
+  background-color: white;
+  border-radius: 3px;
   transition: background-color 0.3s ease;
 }
 
 .navButton:hover {
-  background-color: #febb02; /* subtle hover effect */
+  background-color: #febb02;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 50px; /* Keep height consistent */
+    background-color: #807e00;
+  }
+
+  .navContainer {
+    padding: 0 10px;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-size: 18px;
+    position: static; /* Ensure it follows normal flow */
+  }
+
+  .navButton {
+    margin-left: 0;
+    padding: 5px 10px;
+    margin-right: 5px;
+  }
 }

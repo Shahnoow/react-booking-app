@@ -144,7 +144,7 @@
   }
 
   .headerContainer {
-    margin-bottom: 40%;
+    margin-bottom: 42%;
     padding-left: 3%;
   }
 
@@ -152,8 +152,8 @@
     align-items: center;
     gap: 15px;
     padding: 18px;
-    bottom: -10%;
-    width: 95%;
+    bottom: -9%;
+    width: 94%;
   }
 
   .headerSearchItem {
